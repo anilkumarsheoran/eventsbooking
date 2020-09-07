@@ -113,11 +113,12 @@ export const resolvers = {
                 title: eventInput.title,
                 description: eventInput.description,
                 price: eventInput.price,
-                date: eventInput.date,
+                date: new Date(eventInput.date).toISOString(),
                 creator: "5f3d42092d5d708daf04d2a1"
             });
             let createdEvent;
             try{
+                console.log('inside the createevent resolveer')
                 const result = await newEvent
                 .save()
                     createdEvent = { ...result._doc, _id: result._doc._id.toString(), creator: getUser.bind(this, result._doc.creator)};

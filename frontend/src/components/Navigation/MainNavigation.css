@@ -7,4 +7,14 @@
     background: #01d1d1;
     padding: 0 1rem;
     display: flex;
+    align-items: center;
+}
+
+.main-navigation__item{
+    display: flex;
+}
+
+.main-navigation__item ul li{
+    display: inline-block;
+    padding: 0 1rem;
 }

@@ -3,3 +3,29 @@
     max-width: 80%;
     margin: 5rem;
 }
+
+.form-control {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.form-control label{
+}
+
+.form-control input{
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    min-width: 300px;
+}
+
+button {
+    background: #01d1d1;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+button[type='submit']{
+    margin-left: 20px;
+}
